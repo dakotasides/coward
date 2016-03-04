@@ -1,5 +1,4 @@
 #!/usr/bin/bash
-cd /home/penguin/.aur
+cd /home/$(whoami)/.aur
 mcd $1
 cower -fdd $1 && cd $1 && makepkg -i 
-
