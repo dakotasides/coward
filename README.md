@@ -1,6 +1,7 @@
-coward
+coward is an AUR helper.
 
+It's basically just a shell script wrapped
+around cower, so have that installed. 
 
-apply to /usr/local/bin/
-
-create a .aur folder
+Copy this binary to /usr/local/bin 
+and create a .aur folder in your home folder.
