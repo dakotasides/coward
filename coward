@@ -1,4 +1,6 @@
 #!/usr/bin/bash
+echo "Setting up build environment for ${1}"
 cd /home/$(whoami)/.aur
-mcd $1
-cower -fdd $1 && cd $1 && makepkg -i 
+mkdir $1 && cd $1
+echo "Invoking cower..."
+cower -fdd $1 && cd $1 && echo "Done!" && makepkg -i 
